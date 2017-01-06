@@ -1,7 +1,13 @@
 package main
 
-import "./kthLargest"
+import (
+	"./convertRoman"
+	"./kthLargest"
+	"./reverseString"
+)
 
 func main() {
-	kthLargest.FindElement([]int{100, 400, 500, 1290, 12939, 12, 23, 4}, 5)
+	convertRoman.ConvertRoman("MCMLXXXII")
+	reverseString.Reverse("Hello World")
+	kthLargest.FindElement([]int{1, 400, 5, 1290, 12939, 12, 23, 4}, 4)
 }
